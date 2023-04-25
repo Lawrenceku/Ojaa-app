@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import SideNav from './side-bar'
-import Dashboard from './Dashboard.jsx'
-import DashboardTop from './DashboardTop.jsx'
-import LineGraph from './lineGraph.jsx'
+import Dashboard from './Dashboard'
+import DashboardTop from './DashboardTop'
+import LineGraph from './lineGraph'
 import TopReferral from './Top-Referral'
 import TopLocation from './Top-locations'
-
 
 
 function App() {
@@ -13,11 +12,10 @@ function App() {
     <>
     <div className='flex'>
     <SideNav/>
-
     <div className='flex flex-col'>
-    <DashboardTop username="Blessing"  />
+    <DashboardTop username="Blessing" />
     <Dashboard/> 
-    <LineGraph/>
+    <LineGraph />
     <div className='flex'>
     <TopLocation/>
     <TopReferral/>

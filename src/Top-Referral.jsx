@@ -1,13 +1,20 @@
 import React from 'react'
-import DoughnutChart from './doughnut-graph'
+import LocationGraph from './referralGraph'
+
 function TopReferral(){
 return(
-    <div className=' w-100 flex-col border px-24 ml-64 my-4'>
+    <div className='flex-col border px-24 ml my-4 rounded-md shadow-sm'>
         <div className='flex'>
-        <p className='flex-1'>Top Location</p>
+        <p className='flex-1'>Top Referall Source</p>
         <p className='text-orange-600'>View Full Reports</p>
         </div>
-        <DoughnutChart/>
+        <ul>
+            <li>Google</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>linkedin</li>
+        </ul>
+        <LocationGraph/>
     </div>
     
 )

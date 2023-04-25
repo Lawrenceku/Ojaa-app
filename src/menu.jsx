@@ -12,7 +12,7 @@ function CollapsibleMenu() {
       {isOpen && (
         <div className="absolute z-10 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 bottom-10">
           <div
-            className="py-1"
+            className="py-1 "
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
@@ -38,14 +38,28 @@ function CollapsibleMenu() {
             >
               Option 3
             </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+            >
+              Option 4
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+            >
+              Log out
+            </a>
           </div>
         </div>
       )}
       <button
         onClick={toggleMenu}
-        className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 absolute bottom-0 left-0"
+        className="text-gray-800 font-bold hover:text-gray-700 focus:outline-none focus:text-gray-700 absolute bottom-0 left-0"
       >
-        Menu
+        ...
       </button>
     </div>
   );

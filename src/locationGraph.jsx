@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 
-const LocationGraph = () => {
+const DoughnutChart = () => {
   const chartRef = useRef();
 
   useEffect(() => {
     const chartConfig = {
       type: 'doughnut',
       data: {
-        labels: ['Red', 'Blue', 'Yellow'],
+        labels: ['Nigeria', 'US', 'Netherlands', "Andora", "others"],
         datasets: [
           {
             label: 'My First Dataset',
-            data: [300, 50, 100],
-            backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+            data: [34, 19, 25,20,2],
+            backgroundColor: ['rgb(0, 0, 255)', 'rgb(155, 48, 250)', 'rgb(0, 128, 0)','rgba(255, 255, 0,)','(255, 165, 0)'],
           },
         ],
       },
@@ -28,4 +28,4 @@ const LocationGraph = () => {
   return <canvas ref={chartRef} />;
 };
 
-export default LocationGraph;
+export default DoughnutChart;
