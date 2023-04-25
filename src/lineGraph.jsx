@@ -20,7 +20,7 @@ const LineGraph = () => {
           datasets: [
             {
               data: Object.values(graphData),
-              borderColor: 'red',
+              borderColor: 'rgb(255, 84, 3)',
               borderWidth: 2,
               fill: {
                 type: 'linear',
