@@ -19,35 +19,35 @@ function CollapsibleMenu() {
           >
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
             >
-              Option 1
+              Settings
             </a>
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
             >
-              Option 2
+              Integrations
             </a>
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
             >
-              Option 3
+              Refer and Earn
             </a>
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
             >
-              Option 4
+              Switch account
             </a>
             <a
               href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
             >
               Log out
