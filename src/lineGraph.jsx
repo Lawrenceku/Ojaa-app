@@ -7,19 +7,12 @@ const LineGraph = () => {
     const chartConfig = {
       type: 'line',
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['', '15 Dec', '10 Dec', '20 Dec', '21 Dec', '22 Dec', '23 Dec', '24 Dec'],
         datasets: [
           {
-            label: 'Sales',
-            data: [50, 45, 60, 70, 65, 80, 90],
-            borderColor: 'rgba(255, 99, 132, 1)',
-            fill: false,
-          },
-          {
-            label: 'Expenses',
-            data: [30, 35, 40, 45, 50, 55, 60],
-            borderColor: 'rgba(54, 162, 235, 1)',
-            fill: false,
+            data: [50, 45, 60, 70, 65, 80, 90, 60],
+            borderColor: 'rgba(0, 0, 180)',
+            fill: true,
           },
         ],
       },
@@ -34,7 +27,9 @@ const LineGraph = () => {
           ],
         },
       },
+      
     };
+    
 
     const myChart = new Chart(chartRef.current, chartConfig);
 
@@ -43,7 +38,18 @@ const LineGraph = () => {
     };
   }, []);
 
-  return <canvas ref={chartRef} />;
+  return (
+    <>
+    <div className='border flex flex-col p-5'>
+     
+    <p className="text-lg font-bold">Page Views</p>
+            <p>All Time</p>
+            <h1 className='font-bold text-5xl mt-6'>500</h1>
+            
+            <canvas ref={chartRef}  /* style={{ width: '100%', height: '40px' }}  */ />
+  </div>
+  </>
+  )
 };
 
 export default LineGraph;

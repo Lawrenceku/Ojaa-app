@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Rccg_logo.png" 
+import CollapsibleMenu from './menu';
 
 function SideNav() {
   return (
@@ -42,6 +43,7 @@ function SideNav() {
       </ul>
       <div className='flex'>
       <img src="./Rccg_logo.png" alt="img" /><span className='text-sm'>Blessing Daniels</span>
+      <CollapsibleMenu/>
       </div>
     </div>
   );
