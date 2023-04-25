@@ -1,56 +1,91 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const LineGraph = () => {
   const chartRef = useRef();
+  const [graphData, setGraphData] = useState({});
 
   useEffect(() => {
-    const chartConfig = {
-      type: 'line',
-      data: {
-        labels: ['', '15 Dec', '10 Dec', '20 Dec', '21 Dec', '22 Dec', '23 Dec', '24 Dec'],
-        datasets: [
-          {
-            data: [1, 3, 3, 7, 8, 5, 20, 50,100,2],
-            borderColor: 'rgba(0, 0, 180)',
-            fill: true,
-          },
-        ],
-      },
-      options: {
-        scales: {
-          yAxes: [
+    fetch('https://fe-task-api.mainstack.io/')
+      .then(response => response.json())
+      .then(data => setGraphData(data.graph_data.views))
+      .catch(error => console.error(error));
+  }, []);
+
+  useEffect(() => {
+    if (Object.keys(graphData).length) {
+      const chartConfig = {
+        type: 'line',
+        data: {
+          labels: Object.keys(graphData),
+          datasets: [
             {
-              ticks: {
-                data: [1, 3, 3, 7, 8, 5, 20, 50,100,2],
-                beginAtZero: true,
+              data: Object.values(graphData),
+              borderColor: 'red',
+              borderWidth: 2,
+              fill: {
+                type: 'linear',
+                colorStops: [
+                  { offset: 0, color: 'red' },
+                  { offset: 1, color: 'rgb(10,10,1)' },
+                ],
+                fill: 'origin',
               },
+              pointRadius: 0,
             },
           ],
         },
-      },
-      
-    };
-    
+        options: {
+          scales: {
+            xAxes: [
+              {
+                gridLines: {
+                  display: false,
+                },
+                ticks: {
+                  autoSkip: true,
+                  maxTicksLimit: 7,
+                },
+              },
+            ],
+            yAxes: [
+              {
+                gridLines: {
+                  borderDash: [4, 4],
+                  color: 'rgba(0, 0, 0, 0.1)',
+                },
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+          legend: {
+            display: false,
+          },
+          tooltips: {
+            intersect: false,
+          },
+        },
+      };
 
-    const myChart = new Chart(chartRef.current, chartConfig);
+      const myChart = new window.Chart(chartRef.current, chartConfig);
 
-    return () => {
-      myChart.destroy();
-    };
-  }, []);
+      return () => {
+        myChart.destroy();
+      };
+    }
+  }, [graphData]);
 
   return (
     <>
-    <div className='border flex flex-col p-5 mx-6 rounded-md shadow-lg'>
-     
-    <p className="text-lg font-bold">Page Views</p>
-            <p>All Time</p>
-            <h1 className='font-bold text-5xl mt-6'>500</h1>
-            
-            <canvas ref={chartRef}  /* style={{ width: '100%', height: '40px' }}  */ />
-  </div>
-  </>
-  )
+      <div className='border flex flex-col p-5 mx-6 rounded-md shadow-lg'>
+        <p className='text-lg font-bold'>Page Views</p>
+        <p>All Time</p>
+        <h1 className='font-bold text-5xl mt-6'>{Object.values(graphData).reduce((acc, curr) => acc + curr, 0)}</h1>
+        <canvas ref={chartRef} />
+      </div>
+    </>
+  );
 };
 
 export default LineGraph;
