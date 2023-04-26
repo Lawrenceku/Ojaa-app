@@ -3,7 +3,7 @@ import DoughnutChart from "./locationGraph";
 
 function TopLocation(){
     return(
-       < div className='flex flex-col w-1/2 flex-1 ml-6 border p-5 my-4 rounded-md' >
+       < div className='flex flex-col w-1/2 flex-1 ml-12 mr-6 border p-5 my-4 rounded-md' >
         <div className='flex  mb-10 w-full'>
         <p className='flex-1 font-bold'>Top Locations</p>
         <p className='text-orange-600'>View Full Reports</p>
