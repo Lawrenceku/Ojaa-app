@@ -5,6 +5,7 @@ import DashboardTop from './DashboardTop'
 import LineGraph from './lineGraph'
 import TopReferral from './Top-Referral'
 import TopLocation from './Top-locations'
+import './index.css'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <DashboardTop username="Blessing" />
     <Dashboard/> 
     <LineGraph />
-    <div className='flex w-full flex-grow mx-12 p-0 justify-center'>
+    <div className='flex w-full flex-grow  p-0 justify-center'>
     <TopLocation/>
     <TopReferral/>
     </div>

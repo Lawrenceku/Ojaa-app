@@ -3,13 +3,12 @@ import DoughnutChart from "./locationGraph";
 
 function TopLocation(){
     return(
-       < div className='flex-col flex-grow-0 flex-1 ml-0 border px-24 ml-6 my-4 rounded-md '>
-        <div className='flex'>
+       < div className='flex flex-col w-1/2 flex-1 ml-0 border px-5 my-4 rounded-md' >
+        <div className='flex '>
         <p className='flex-1 font-bold'>Top Locations</p>
         <p className='text-orange-600'>View Full Reports</p>
         </div>
-        
-        <ul>
+       {/*  <ul>
             <li className="flex"><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5H7V15.5H0V0.5ZM14 0.5H21V15.5H14V0.5Z" fill="#0A6A30"/>
 </svg>
@@ -64,8 +63,10 @@ Andorra</li>
 <rect width="12" height="12" rx="6" fill="#F09468"/>
 </svg>
 </li>
-        </ul>
+        </ul> */}
+            <div>
             <DoughnutChart/>
+            </div>
             </div>
     )
 }

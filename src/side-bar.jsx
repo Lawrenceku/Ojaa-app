@@ -3,10 +3,7 @@ import CollapsibleMenu from './menu';
 import avatar from './avatar.png'
 
 function SideNav() {
-        /* const avatar = {
-                background: "url('./avatar.png')",
-
-        } */
+       
   return (
     <>
     <div  className="border border-b-transparent  py-20 pl-10 bg-white h-screen w-56 text-black flex flex-col rounded-md  ">
@@ -87,9 +84,9 @@ item8
 
 </defs>
 </svg>
-        <img src={avatar} className='absolute rounded-full'/>
-<span className='text-sm mt-1  mx-3 '>Blessing Daniels</span>
-      <span className='mt-4 mr-3'><CollapsibleMenu /></span>
+        <img src={avatar} className='absolute  rounded-full'/>
+<span className='text-sm mt-2  mx-3 '>Blessing Daniels</span>
+      <span className='mt-6 mr-3'><CollapsibleMenu /></span>
         </div>
     </div>
     </>

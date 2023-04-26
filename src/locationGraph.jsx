@@ -55,7 +55,7 @@ const DoughnutChart = () => {
       });
   }, []);
 
-  return <canvas height='100' width='100' ref={chartRef} />;
+  return <canvas ref={chartRef} />;
 };
 
 export default DoughnutChart;
