@@ -125,7 +125,7 @@ const LocationGraph = () => {
     return color;
   };
 
-  return <canvas ref={chartRef} />;
+  return <canvas height='10' width='30' ref={chartRef} />;
 };
 
 export default LocationGraph;
