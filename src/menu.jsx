@@ -21,7 +21,10 @@ function CollapsibleMenu() {
               href="#"
               className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
-            >
+            ><svg height='10' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.6 11.6c.4-.8.4-1.8 0-2.6l2.1-1.6c.4-.3.5-.9.2-1.3l-2-3.5c-.3-.5-.9-.7-1.4-.5l-2.5 1c-.8-.6-1.7-1-2.6-1s-1.8.4-2.6 1l-2.5-1c-.5-.2-1.1 0-1.4.5l-2 3.5c-.3.4-.2.9.2 1.3l2.1 1.6c-.4.8-.4 1.8 0 2.6l-2.1 1.6c-.4.3-.5.9-.2 1.3l2 3.5c.3.5.9.7 1.4.5l2.5-1c.8.6 1.7 1 2.6 1s1.8-.4 2.6-1l2.5 1c.5.2 1.1 0 1.4-.5l2-3.5c.3-.4.2-.9-.2-1.3l-2.1-1.6zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+          </svg>
               Settings
             </a>
             <a
@@ -49,7 +52,10 @@ function CollapsibleMenu() {
               href="#"
               className="block px-4 py-2 text-sm text-gray-700  hover:text-orange-600"
               role="menuitem"
-            >
+            ><svg height='12' className="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+            <path d="M9 18h-6v-12h6"></path>
+            <path d="M21 12L15 6M21 12L15 18"></path>
+          </svg>
               Log out
             </a>
           </div>

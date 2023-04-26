@@ -1,12 +1,16 @@
 import React from 'react';
 import CollapsibleMenu from './menu';
-import './avatar.png'
+import avatar from './avatar.png'
 
 function SideNav() {
+        /* const avatar = {
+                background: "url('./avatar.png')",
+
+        } */
   return (
     <>
     <div  className="border border-b-transparent  py-20 pl-10 bg-white h-screen w-56 text-black flex flex-col rounded-md  ">
-      <div className='flex top-5 ml-4  absolute justify-center'>
+      <div className='flex top-5 ml-5  absolute justify-center'>
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M32.316 13.9454H27.0014C26.7468 13.9454 26.5026 13.8442 26.3226 13.6642C26.1425 13.4841 26.0414 13.24 26.0414 12.9853V7.73466C26.0414 7.48005 26.1425 7.23587 26.3226 7.05584C26.5026 6.8758 26.7468 6.77466 27.0014 6.77466H29.0867C31.4 6.77466 33.276 8.64933 33.276 10.9627V12.9853C33.276 13.24 33.1749 13.4841 32.9949 13.6642C32.8148 13.8442 32.5707 13.9454 32.316 13.9454Z" fill="#131316"/>
     <path d="M6.73596 29.0574V17.3348C6.73596 17.2087 6.76079 17.0839 6.80904 16.9674C6.85728 16.8509 6.928 16.7451 7.01714 16.6559C7.10628 16.5668 7.21211 16.4961 7.32859 16.4478C7.44506 16.3996 7.56989 16.3748 7.69596 16.3748H12.9813C13.2359 16.3748 13.4801 16.4759 13.6601 16.6559C13.8402 16.836 13.9413 17.0801 13.9413 17.3348V32.2868C13.9413 32.5414 13.8402 32.7855 13.6601 32.9656C13.4801 33.1456 13.2359 33.2468 12.9813 33.2468H10.9253C8.61196 33.2468 6.73596 31.3708 6.73596 29.0574Z" fill="#131316"/>
@@ -83,10 +87,10 @@ item8
 
 </defs>
 </svg>
-<img src="./avatar.png" alt="im" />
-<span className='text-sm'>Blessing Daniels</span>
-      <CollapsibleMenu/>
-      </div>
+        <img src={avatar} className='absolute rounded-full'/>
+<span className='text-sm mt-1  mx-3 '>Blessing Daniels</span>
+      <span className='mt-4 mr-3'><CollapsibleMenu /></span>
+        </div>
     </div>
     </>
   );

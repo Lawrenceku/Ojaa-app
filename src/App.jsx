@@ -12,11 +12,11 @@ function App() {
     <>
     <div className='flex'>
     <SideNav/>
-    <div className='flex flex-col'>
+    <div className=' flex flex-col'>
     <DashboardTop username="Blessing" />
     <Dashboard/> 
     <LineGraph />
-    <div className='flex'>
+    <div className='flex w-full flex-grow mx-12 p-0 justify-center'>
     <TopLocation/>
     <TopReferral/>
     </div>
