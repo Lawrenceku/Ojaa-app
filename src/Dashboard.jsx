@@ -2,7 +2,7 @@ import React from 'react';
 
 function Dashboard() {
   return (
-    <div className="flex mx-6 ">
+    <div className="flex mx-9 ">
 <button class="bg-white hover:bg-orange-100 hover:text-orange-600 hover:border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">
   1 Day
 </button>
@@ -15,7 +15,7 @@ function Dashboard() {
 <button class="bg-white hover:bg-orange-100 hover:text-orange-600 hover:border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">
   30 Days
 </button>
-<button class="bg-white bg-orange-100 text-orange-600 border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">
+<button class=" bg-orange-100 text-orange-600 border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">
   All Time
 </button>
 <button class="bg-white hover:bg-orange-100 hover:text-orange-600 focus hover:border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">

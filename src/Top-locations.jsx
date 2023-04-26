@@ -8,6 +8,7 @@ function TopLocation(){
         <p className='flex-1 font-bold'>Top Locations</p>
         <p className='text-orange-600'>View Full Reports</p>
         </div>
+        <div className="flex w-2">
         <ul>
             <li className="flex"><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5H7V15.5H0V0.5ZM14 0.5H21V15.5H14V0.5Z" fill="#0A6A30"/>
@@ -65,6 +66,7 @@ Andorra</li>
 </li>
         </ul>
             <DoughnutChart/>
+            </div>
         </div>
     )
 }

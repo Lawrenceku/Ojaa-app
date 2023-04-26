@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const LineGraph = () => {
+  const linechart ={
+  position:"relative"
+  }
+  
   const chartRef = useRef();
   const [graphData, setGraphData] = useState({});
 
@@ -78,7 +82,7 @@ const LineGraph = () => {
 
   return (
     <>
-      <div className='border flex flex-col p-5 mx-6 rounded-md shadow-lg'>
+      <div className='border w-full h-full flex flex-col p-5 mx-12 rounded-md '>
         <div className='flex'>
         <p className='text-lg font-bold flex-1'>Page Views</p>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +90,8 @@ const LineGraph = () => {
 </svg>
         </div>
         <p>All Time</p>
-        <h1 className='font-bold text-5xl mt-6'>{Object.values(graphData).reduce((acc, curr) => acc + curr, 0)}</h1>
-        <canvas ref={chartRef} />
+        <h1 className='font-bold text-5xl my-6'>{Object.values(graphData).reduce((acc, curr) => acc + curr, 0)}</h1>
+        <canvas style={linechart} ref={chartRef} />
       </div>
     </>
   );
