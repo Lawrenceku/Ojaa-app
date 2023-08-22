@@ -84,7 +84,7 @@ item8
 
 </defs>
 </svg>
-        <img src={avatar} className='absolute  rounded-full'/>
+        <img src='https://static-00.iconduck.com/assets.00/profile-circle-icon-1023x1024-ucnnjrj1.png' className='absolute h-8  rounded-full'/>
 <span className='text-sm mt-2  mx-3 '>Blessing Daniels</span>
       <span className='mt-6 mr-3'><CollapsibleMenu /></span>
         </div>
