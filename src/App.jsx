@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
+import { Routes, Route, Link } from "react-router-dom";
 import SideNav from './side-bar'
 import Dashboard from './Dashboard'
 import DashboardTop from './DashboardTop'
 import LineGraph from './lineGraph'
 import TopReferral from './Top-Referral'
 import TopLocation from './Top-locations'
+import Login from './Login'
 import './index.css'
 
 
 function App() {
   return (
     <>
-    <div className='flex'>
+    
+     <Login ></Login> 
+   {/* <div className='flex'>
     <SideNav/>
     <div className=' flex flex-col'>
-    <DashboardTop username="Blessing" />
+    <DashboardTop username="John" />
     <Dashboard/> 
     <LineGraph />
     <div className='flex w-full flex-grow  p-0 justify-center'>
@@ -22,7 +26,7 @@ function App() {
     <TopReferral/>
     </div>
     </div>
-    </div>
+    </div>  */}
     </>
   )
 }

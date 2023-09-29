@@ -13,3 +13,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Change this to your desired color */
 }
+#cart{
+  position: relative;
+  left: 55%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+}
