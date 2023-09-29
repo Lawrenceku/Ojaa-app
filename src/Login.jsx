@@ -24,9 +24,9 @@ return(
             <img id='cart' className="h-52" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg.med.png" alt="" />
             <form id="form" className="flex-col p-8" action="">
               <label htmlFor="" className="block font-medium">UserName   </label>
-              <input placeholder="Enter UserName" name="name" className='w-100 mb-16'  type="text" className="border focus:outline-0 p-2" />
+              <input placeholder="Enter UserName" name="name"  type="text" className="w-full md:w-80 mb-8 border focus:outline-0 p-2" />
               <label className="font-medium block" htmlFor="password" >Password</label>
-              <input  className='  border-gray-200 border p-2 focus:outline-0 w-full md:w-60 ' type="password" placeholder="Enter Password" name="password" id="" />
+              <input  className='  border-gray-200 border p-2 focus:outline-0 w-full md:w-80 ' type="password" placeholder="Enter Password" name="password" id="" />
             </form>
               <p className="flex justify-center ">
                 <button className=" hover:text-orange-500 hover:bg-white border border-orange-500 text-white mx-4 bg-orange-500 p-2">Login</button>
