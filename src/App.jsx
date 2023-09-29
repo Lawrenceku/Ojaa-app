@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
+import React from 'react'
+/* import { Routes, Route, Link } from "react-router-dom"
 import SideNav from './side-bar'
 import Dashboard from './Dashboard'
 import DashboardTop from './DashboardTop'
 import LineGraph from './lineGraph'
 import TopReferral from './Top-Referral'
-import TopLocation from './Top-locations'
+import TopLocation from './Top-locations' */
 import Login from './Login'
 import './index.css'
 
