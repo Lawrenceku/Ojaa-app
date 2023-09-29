@@ -21,7 +21,9 @@ return(
   <div className=" w-full  h-full absolute">
         <div id='container' className="items-center justify-center flex-col h-full w-full">
             <p className="font-bold text-orange-500 text-6xl block text-center p-8">Ojaa</p>
-            <img id='cart' className="h-48 mb-20" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg.med.png" alt="" />
+            <div className="flex justify-center ">
+              <img id='cart' className="h-48 ml-12 mt-10 mb-20" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg.med.png" alt="" />
+            </div>
             <form id="form" className="flex-col p-8 r" action="">
               <label htmlFor="" className="block font-medium  w-full md:w-80">UserName   </label>
               <input placeholder="Enter UserName" name="name"  type="text" className="w-full md:w-80 mb-8 border focus:outline-0 p-2" />
