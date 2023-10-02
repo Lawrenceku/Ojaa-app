@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { initializeApp } from "firebase/app"
+import { useNavigate } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "firebase/auth"
+
 // Initialize Firebase and Firebase Authentication
 const firebaseConfig = {
   apiKey: "AIzaSyAk69XIPoc7o85wKwh9KZERIQY9tMluY1o",
@@ -15,8 +17,10 @@ const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
 
 function Login(){
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')  
+ 
 
 
 
@@ -26,10 +30,13 @@ function Login(){
     .then((userCredential)=>{
       //done signing in
       const user = userCredential.user
+      navigate('./home')
     })
     .catch ((error)=>{
       const errorCode = error.code;
-      const errorMessage = error.message;    }
+      const errorMessage = error.message; 
+    alert('you have no account yet')
+    }
     )
     }
 
@@ -38,6 +45,7 @@ function Login(){
      createUserWithEmailAndPassword(auth,email,password)
      .then((userCredential) =>{
       //signed up
+      alert('signed up successfully!')
       const user = userCredential.user
      })
      .catch((error)=>{
