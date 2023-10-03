@@ -6,12 +6,21 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } 
 
 // Initialize Firebase and Firebase Authentication
 const firebaseConfig = {
-  apiKey: "process.env.apiKey",
-  authDomain: "process.env.authDomain",
-  projectId: "process.env.projectId",
-  storageBucket: "process.env.storageBucket",
-  messagingSenderId: "process.env.messagingSenderId",
-  appId: "process.env.appId"
+  
+  apiKey: "AIzaSyAk69XIPoc7o85wKwh9KZERIQY9tMluY1o",
+  authDomain: "ojaa-cef8a.firebaseapp.com",
+  projectId: "ojaa-cef8a",
+  storageBucket: "ojaa-cef8a.appspot.com",
+  messagingSenderId:"85551257488",
+  appId: "1:85551257488:web:2adce7913f278682124515",
+  measurementId: "G-P3W97B9PVL"
+
+  /* apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId */
 }
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
