@@ -29,13 +29,14 @@ function Login(){
     signInWithEmailAndPassword(auth,email,password)
     .then((userCredential)=>{
       //done signing in
+      alert('login successful!')
       const user = userCredential.user
       navigate('./home')
     })
     .catch ((error)=>{
       const errorCode = error.code;
       const errorMessage = error.message; 
-    alert('you have no account yet')
+    alert('Fill in the required info correctly')
     }
     )
     }
@@ -45,7 +46,7 @@ function Login(){
      createUserWithEmailAndPassword(auth,email,password)
      .then((userCredential) =>{
       //signed up
-      alert('signed up successfully!')
+      alert('signed up successfully! ')
       const user = userCredential.user
      })
      .catch((error)=>{
