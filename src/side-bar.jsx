@@ -1,6 +1,5 @@
 import React from 'react';
 import CollapsibleMenu from './menu';
-import avatar from './avatar.png'
 
 function SideNav() {
        
