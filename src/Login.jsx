@@ -6,12 +6,12 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } 
 
 // Initialize Firebase and Firebase Authentication
 const firebaseConfig = {
-  apiKey: "AIzaSyAk69XIPoc7o85wKwh9KZERIQY9tMluY1o",
-  authDomain: "ojaa-cef8a.firebaseapp.com",
-  projectId: "ojaa-cef8a",
-  storageBucket: "ojaa-cef8a.appspot.com",
-  messagingSenderId: "1:85551257488:web:2adce7913f278682124515",
-  appId: "G-P3W97B9PVL"
+  apiKey: "process.env.apiKey",
+  authDomain: "process.env.authDomain",
+  projectId: "process.env.projectId",
+  storageBucket: "process.env.storageBucket",
+  messagingSenderId: "process.env.messagingSenderId",
+  appId: "process.env.appId"
 }
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
@@ -58,7 +58,6 @@ function Login(){
      )
      
       }
- 
 return(
   <div className=" w-full  h-full absolute">
         <div id='container' className="items-center justify-center flex-col h-full w-full">
