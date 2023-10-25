@@ -15,7 +15,7 @@ return(
             <li>linkedin</li>
         </ul> */}
         <div >
-        <LocationGraph/>
+        <LocationGraph className=''/>
         </div>
     </div>
     

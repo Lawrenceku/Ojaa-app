@@ -10,14 +10,15 @@ import TopLocation from './Top-locations'
 
 function Home (){
 return(<div className='flex'>
-    <SideNav/>
-    <div className=' flex flex-col'>
+    <SideNav className=''/>
+    <div className=' flex flex-col w-screen md:w-full'>
     <DashboardTop username="John" />
     <Dashboard/> 
     <LineGraph />
-    <div className='flex w-full flex-grow  p-0 justify-center'>
+    <div className='flex flex-col md:flex-row w-screen md:w-full flex-grow  p-0 justify-center'>
     <TopLocation/>
-    <TopReferral/>
+    <TopLocation/>
+    {/* <TopReferral/> */}
     </div>
     </div>
     </div> )

@@ -5,7 +5,7 @@ function SideNav() {
        
   return (
     <>
-    <div  className="border border-b-transparent  py-20 pl-10 bg-white h-screen w-56 text-black flex flex-col rounded-md  ">
+    <div  className="hidden md:inline-block border border-b-transparent  py-20 pl-10 bg-white h-screen w-56 text-black flex flex-col rounded-md  ">
       <div className='flex top-5 ml-5  absolute justify-center'>
       <svg width="100" height="40" xmlns="http://www.w3.org/2000/svg">
   <text x="10" y="30" font-family="Arial" font-size="24" font-weight='999' fill="black">Ojaa</text>
