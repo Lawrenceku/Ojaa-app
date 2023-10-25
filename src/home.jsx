@@ -15,7 +15,7 @@ return(<div className='flex'>
     <DashboardTop username="John" />
     <Dashboard/> 
     <LineGraph />
-    <div className='flex flex-col md:flex-row w-screen md:w-full flex-grow  p-0 justify-center'>
+    <div className='flex flex-col md:flex-row w-screen md:w-full flex-grow  p-0 justify-start md:justify-center'>
     <TopLocation/>
     <TopLocation/>
     {/* <TopReferral/> */}

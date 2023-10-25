@@ -12,7 +12,7 @@ function DashboardTop({ username }) {
         <p className="mt-1 lg:flex-1 md:mr-64 text-sm text-gray-500">
           Check out your dashboard summary
         </p>
-        <p className="mt-1   text-sm text-orange-500">
+        <p className="mt-1 text-right  text-sm text-orange-500">
          View Analytics
         </p>
         </div>

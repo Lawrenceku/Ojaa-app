@@ -64,7 +64,7 @@ return(
         <div id='container' className="items-center justify-center flex-col h-full w-full">
             <p className="font-bold text-orange-500 text-6xl block text-center px-8">Ojaa</p>
             <div className="flex justify-center ">
-              <img id='cart' className="h-48 ml-12 mt-10 mb-20" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg.med.png" alt="" />
+              <img id='cart' className="h-48 ml-12 mt-10 mb-16" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg.med.png" alt="" />
             </div>
             <form id="form" className="flex-col p-8 r"  action="">
               <label htmlFor="" className="block font-medium  w-full md:w-80">Email   </label>

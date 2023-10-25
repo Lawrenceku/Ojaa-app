@@ -2,7 +2,7 @@ import React from 'react';
 
 function Dashboard() {
   return (
-    <div className="flex mx-9 ">
+    <div className="flex mx-9 flex-wrap">
 <button class="bg-white hover:bg-orange-100 hover:text-orange-600 hover:border-orange-600 m-3 border textblack font-semibold py-2 px-4 rounded-full">
   1 Day
 </button>
